@@ -1,0 +1,7 @@
+
+{
+"password_length_min": 12,
+"password_complexity_required": true,
+"max_failed_attempts": 5,
+"password_expiration_days_max": 90
+}

@@ -1,0 +1,55 @@
+
+{
+
+  "_note": "Este archivo es un ejemplo. No refleja datos reales de mi ordenador.",
+
+  "passwords": [
+    {
+      "check": "Minimum password length",
+      "status": "FAIL",
+      "value": 8,
+      "expected": 12,
+      "severity": "High",
+      "evidence": "Minimum password length: 8",
+      "fix": "Establecer una longitud mínima de contraseñas de 12 caracteres o más mediante GPO."
+    },
+    {
+      "check": "Maximum password age (days)",
+      "status": "PASS",
+      "value": 60,
+      "expected": 90,
+      "severity": "Low",
+      "evidence": "Maximum password age: 60",
+      "fix": ""
+    },
+    {
+      "check": "Account lockout threshold",
+      "status": "FAIL",
+      "value": 10,
+      "expected": 5,
+      "severity": "High",
+      "evidence": "Lockout threshold: 10 attempts",
+      "fix": "Configurar threshold de bloqueo de cuentas a 5 intentos o menos."
+    }
+  ],
+  "firewall_defender": [
+    {
+      "check": "Windows Defender real-time protection",
+      "status": "PASS",
+      "value": "On",
+      "expected": "On",
+      "severity": "Low",
+      "evidence": "Real-time protection enabled",
+      "fix": ""
+    },
+    {
+      "check": "Windows Defender firewall state",
+      "status": "FAIL",
+      "value": "Off",
+      "expected": "On",
+      "severity": "High",
+      "evidence": "Firewall is disabled",
+      "fix": "Habilitar firewall con `Set-NetFirewallProfile -Enabled True`"
+    }
+  ]
+}
