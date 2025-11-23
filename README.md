@@ -16,7 +16,7 @@ Este proyecto sirve como **ejemplo profesional** para portfolios de consultoría
 ---
 
 ## Estructura del proyecto
-
+```
 auto-compliance-checker/
 ├─ src/
 │ ├─ collector/
@@ -27,4 +27,4 @@ auto-compliance-checker/
 ├─ README.md
 ├─ USAGE.md
 └─ ROADMAP.md
-
+```

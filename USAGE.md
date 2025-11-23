@@ -17,6 +17,6 @@ cd auto-compliance-checker
 ```bash
 pip install -r requirements.txt
 ```
-3. Dependencias
+3. Ejecutar
 ```bash
 python main.py --output results.json
