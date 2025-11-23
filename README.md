@@ -1,23 +1,30 @@
-# Auto-Compliance Windows
+# Auto Compliance Checker
 
+Proyecto de auditoría de seguridad para Windows, centrado en:
 
-Herramienta para auditar configuración de seguridad Windows y generar un informe (PDF/HTML).
+- Políticas de contraseñas
+- Windows Defender
+- Firewall
 
+---
 
-**Stack:** Python 3.9+, PowerShell (invocado desde Python), ReportLab, Jinja2.
+## Objetivo
 
+Simular auditorías de seguridad corporativas, generando reportes en JSON listos para revisión.  
+Este proyecto sirve como **ejemplo profesional** para portfolios de consultoría en ciberseguridad.
 
-### Objetivo
-Recolectar evidencias de configuración en Windows (políticas de contraseña, firewall, defender, servicios, puertos), evaluarlas frente a reglas (CIS/NIST básicas) y generar un informe profesional.
+---
 
+## Estructura del proyecto
 
-### Cómo usar (local, entorno Windows)
+auto-compliance-checker/
+├─ src/
+│ ├─ collector/
+│ │ ├─ passwords_ps.py
+│ │ └─ firewall_ps.py
+├─ main.py
+├─ results.json # Ejemplo seguro
+├─ README.md
+├─ USAGE.md
+└─ ROADMAP.md
 
-
-1. Crear y activar un virtualenv:
-
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
